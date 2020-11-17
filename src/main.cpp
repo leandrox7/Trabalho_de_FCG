@@ -412,8 +412,10 @@ int main(int argc, char* argv[])
         glUniformMatrix4fv(projection_uniform , 1 , GL_FALSE , glm::value_ptr(projection));
 
         #define SPHERE 0
-        #define CUBO 1
+        #define CUBE  1
         #define PLANE 2
+        #define PAREDE  3
+        #define PALETA  4
 
         ///OBJETOS DE TESTE DESENHADOS AQUI
 
@@ -429,7 +431,7 @@ int main(int argc, char* argv[])
         DrawVirtualObject(objTstFundo.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstPaleta.model));
-        glUniform1i(object_id_uniform, SPHERE);
+        glUniform1i(object_id_uniform, PALETA);
         glUniform1f(alpha_uniform, 1.0f);
         if(objTstPaleta.active)  DrawVirtualObject(objTstPaleta.shapeName);
 
@@ -439,17 +441,17 @@ int main(int argc, char* argv[])
 //        if(objTstBase.active)  DrawVirtualObject(objTstBase.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstParede.model));
-        glUniform1i(object_id_uniform, CUBO);
+        glUniform1i(object_id_uniform, PAREDE);
         glUniform1f(alpha_uniform, 1.0f);
         if(objTstParede.active)  DrawVirtualObject(objTstParede.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstParede2.model));
-        glUniform1i(object_id_uniform, CUBO);
+        glUniform1i(object_id_uniform, PAREDE);
         glUniform1f(alpha_uniform, 1.0f);
         if(objTstParede.active)  DrawVirtualObject(objTstParede2.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstParede3.model));
-        glUniform1i(object_id_uniform, CUBO);
+        glUniform1i(object_id_uniform, PAREDE);
         glUniform1f(alpha_uniform, 1.0f);
         if(objTstParede.active)  DrawVirtualObject(objTstParede3.shapeName);
 
@@ -468,7 +470,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < COLUNAS_BLOQUINHOS; i++){
             for(int j = 0; j < LINHAS_BLOQUINHOS; j++){
                 glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->model));
-                glUniform1i(object_id_uniform, CUBO);
+                glUniform1i(object_id_uniform, CUBE);
                 glUniform1f(alpha_uniform, arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->alphaFactor);
                 if(arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->active){
                     blocksAlive += 1;
@@ -478,7 +480,7 @@ int main(int argc, char* argv[])
         }
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objBlocoSozinho.model));
-        glUniform1i(object_id_uniform, CUBO);
+        glUniform1i(object_id_uniform, CUBE);
         glUniform1f(alpha_uniform, objBlocoSozinho.alphaFactor);
         if(objBlocoSozinho.active){
             blocksAlive += 1;

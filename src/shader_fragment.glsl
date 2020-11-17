@@ -14,9 +14,12 @@ uniform mat4 view;
 uniform mat4 projection;
 
 // Identificador que define qual objeto está sendo desenhado no momento
-#define SPHERE 0
-#define CUBE  1
-#define PLANE  2
+#define SPHERE 0 //bolinha
+#define CUBE  1 //bloquinhos
+#define PLANE  2 //parte vermelha do fundo
+#define PAREDE  3
+#define PALETA  4
+
 uniform int object_id;
 
 // O valor de saída ("out") de um Fragment Shader é a cor final do fragmento.
@@ -57,7 +60,17 @@ void main()
     vec3 Ka; // Refletância ambiente
     float q; // Expoente especular para o modelo de iluminação de Phong
 
-    if ( object_id == SPHERE )
+    if ( object_id == SPHERE )//bolinha
+    {
+        // PREENCHA AQUI
+        // Propriedades espectrais da esfera
+        Kd = vec3(0.8, 0.4, 0.08);
+        Ks = vec3(0.0,0.0,0.0);
+        Ka = vec3(0.4, 0.2, 0.04);
+        q = 1.0;
+    }
+    else
+    if ( object_id == PALETA )
     {
         // PREENCHA AQUI
         // Propriedades espectrais da esfera
@@ -67,6 +80,15 @@ void main()
         q = 1.0;
     }
     else if ( object_id == CUBE )
+    {
+        // PREENCHA AQUI
+        // Propriedades espectrais do coelho
+        Kd = vec3(0.08, 0.4, 0.8);
+        Ks = vec3(0.8, 0.8, 0.8);
+        Ka = vec3(0.04, 0.2, 0.4);
+        q = 32.0;
+    }
+    else if ( object_id == PAREDE )
     {
         // PREENCHA AQUI
         // Propriedades espectrais do coelho
@@ -122,6 +144,7 @@ void main()
     color.b = colorRGB.b;
     color.a = 1.0;
 
+    //pra explosão:
     color.r = (alpha*colorRGB.r + (1-alpha));
     color.g = alpha*colorRGB.g;
     color.b = alpha*colorRGB.b;
