@@ -921,3 +921,2138 @@
 1602511594 source:c:\users\leandro\desktop\2021-1\fundamentos de computação gráfica\laboratório 4\leandro\src\tiny_obj_loader.cpp
 	"tiny_obj_loader.h"
 
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<dlfcn.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glad\glad.h
+	<windows.h>
+	<stddef.h>
+	<KHR/khrplatform.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\khr\khrplatform.h
+	<sys/cdefs.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1605503778 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\main.cpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<map>
+	<stack>
+	<string>
+	<vector>
+	<limits>
+	<fstream>
+	<sstream>
+	<stdexcept>
+	<algorithm>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<tiny_obj_loader.h>
+	"utils.h"
+	"matrices.h"
+	"fisica.h"
+	"input.h"
+	"globals.h"
+	"objeto_teste.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\_swizzle.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\_swizzle_func.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec4_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x3.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat2x4.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x2.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat3x4.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x2.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x3.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_vector_relational_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\_vectorize.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\simd\exponential.h
+	"platform.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\simd\common.h
+	"platform.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\simd\geometric.h
+	"common.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\simd\matrix.h
+	"geometric.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_mat4x4_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\quaternion.hpp
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_common.hpp"
+	"../ext/quaternion_float.hpp"
+	"../ext/quaternion_float_precision.hpp"
+	"../ext/quaternion_double.hpp"
+	"../ext/quaternion_double_precision.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../ext/quaternion_trigonometric.hpp"
+	"../ext/quaternion_transform.hpp"
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"quaternion.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\scalar_constants.inl
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\constants.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\func_trigonometric_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_projection.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_clip_space.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\matrix_transform.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_relational.hpp
+	"../detail/qualifier.hpp"
+	"vector_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_relational.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/qualifier.hpp"
+	"../detail/type_float.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_common.hpp
+	"../ext/scalar_constants.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_common.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_geometric.hpp
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../ext/vector_relational.hpp"
+	"quaternion_geometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_geometric.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_common.inl
+	"quaternion_common_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_common_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_float.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_quat.hpp
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"type_quat.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_relational.hpp
+	"../vector_relational.hpp"
+	"quaternion_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_relational.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_quat.inl
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"../ext/quaternion_geometric.hpp"
+	<limits>
+	"type_quat_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\detail\type_quat_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_float_precision.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_double.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_double_precision.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_trigonometric.hpp
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"scalar_constants.hpp"
+	"vector_relational.hpp"
+	<limits>
+	"quaternion_trigonometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_trigonometric.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_transform.hpp
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"quaternion_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\quaternion_transform.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\epsilon.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\quaternion_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\vec1.hpp
+	"../ext/vector_bool1.hpp"
+	"../ext/vector_bool1_precision.hpp"
+	"../ext/vector_float1.hpp"
+	"../ext/vector_float1_precision.hpp"
+	"../ext/vector_double1.hpp"
+	"../ext/vector_double1_precision.hpp"
+	"../ext/vector_int1.hpp"
+	"../ext/vector_int1_precision.hpp"
+	"../ext/vector_uint1.hpp"
+	"../ext/vector_uint1_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_bool1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_float1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_double1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_int1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\vector_uint1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\tiny_obj_loader.h
+	<map>
+	<string>
+	<vector>
+	<cassert>
+	<cctype>
+	<cmath>
+	<cstddef>
+	<cstdlib>
+	<cstring>
+	<utility>
+	<fstream>
+	<sstream>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\utils.h
+	<cstdio>
+
+1605346601 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\matrices.h
+	<cstdio>
+	<cstdlib>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	<glm/gtc/matrix_transform.hpp>
+
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\textrendering.cpp
+	<string>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	"utils.h"
+	"dejavufont.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\dejavufont.h
+	<stddef.h>
+	<stdint.h>
+
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\tiny_obj_loader.cpp
+	"tiny_obj_loader.h"
+
+1605205501 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\bloco.cpp
+
+1605500507 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\fisica.cpp
+	<cmath>
+	<cstdlib>
+	<tiny_obj_loader.h>
+	<GLFW/glfw3.h>
+	"fisica.h"
+
+1605332003 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\fisica.h
+	<glm/vec3.hpp>
+	<GLFW/glfw3.h>
+
+1605352293 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\fisica.h
+	<glm/vec3.hpp>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	"matrices.h"
+
+1605501679 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\input.h
+	<GLFW/glfw3.h>
+	"globals.h"
+
+1605357520 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\globals.h
+
+1605502223 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\input.cpp
+	"input.h"
+	<limits>
+
+1605364947 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\globlas.cpp
+	"globals.h"
+
+1605505949 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\objeto_teste.cpp
+	"objeto_teste.h"
+
+1605508823 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\objeto_teste.h
+	"input.h"
+	"fisica.h"
+	<glm/mat4x4.hpp>
+	"matrices.h"
+
+1605346619 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\matrices.cpp
+	"matrices.h"
+
+1605364947 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\globals.cpp
+	"globals.h"
+
+1605517076 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\fisica.cpp
+	"engine/fisica.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<dlfcn.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glad\glad.h
+	<windows.h>
+	<stddef.h>
+	<KHR/khrplatform.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\khr\khrplatform.h
+	<sys/cdefs.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1605640191 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\globals.cpp
+	"globals.h"
+
+1605640241 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\globals.h
+
+1605510619 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\input.cpp
+	"engine/input.h"
+	<limits>
+
+1605647850 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\main.cpp
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<map>
+	<stack>
+	<string>
+	<vector>
+	<limits>
+	<fstream>
+	<sstream>
+	<stdexcept>
+	<algorithm>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<util/tiny_obj_loader.h>
+	"util/utils.h"
+	"util/matrices.h"
+	"engine/fisica.h"
+	"engine/input.h"
+	"globals.h"
+	"jogo/objeto_teste.h"
+	"jogo/objeto_teste2.h"
+	"engine/gerenciamento_objetos.h"
+	"jogo/modelos.h"
+	"jogo/objetos_breakout.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\_swizzle.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\_swizzle_func.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec4_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x3.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat2x4.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x2.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat3x4.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x2.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x3.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_vector_relational_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\_vectorize.hpp
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\exponential.h
+	"platform.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\common.h
+	"platform.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\geometric.h
+	"common.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\matrix.h
+	"geometric.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_mat4x4_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\quaternion.hpp
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_common.hpp"
+	"../ext/quaternion_float.hpp"
+	"../ext/quaternion_float_precision.hpp"
+	"../ext/quaternion_double.hpp"
+	"../ext/quaternion_double_precision.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../ext/quaternion_trigonometric.hpp"
+	"../ext/quaternion_transform.hpp"
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"quaternion.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\scalar_constants.inl
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\constants.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_trigonometric_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_projection.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_clip_space.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\matrix_transform.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_relational.hpp
+	"../detail/qualifier.hpp"
+	"vector_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_relational.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/qualifier.hpp"
+	"../detail/type_float.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_common.hpp
+	"../ext/scalar_constants.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_common.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_geometric.hpp
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../ext/vector_relational.hpp"
+	"quaternion_geometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_geometric.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_common.inl
+	"quaternion_common_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_common_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_float.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_quat.hpp
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"type_quat.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_relational.hpp
+	"../vector_relational.hpp"
+	"quaternion_relational.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_relational.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_quat.inl
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"../ext/quaternion_geometric.hpp"
+	<limits>
+	"type_quat_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_quat_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_float_precision.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_double.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_double_precision.hpp
+	"../detail/type_quat.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_trigonometric.hpp
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"scalar_constants.hpp"
+	"vector_relational.hpp"
+	<limits>
+	"quaternion_trigonometric.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_trigonometric.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_transform.hpp
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"quaternion_transform.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\quaternion_transform.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\epsilon.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\quaternion_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\vec1.hpp
+	"../ext/vector_bool1.hpp"
+	"../ext/vector_bool1_precision.hpp"
+	"../ext/vector_float1.hpp"
+	"../ext/vector_float1_precision.hpp"
+	"../ext/vector_double1.hpp"
+	"../ext/vector_double1_precision.hpp"
+	"../ext/vector_int1.hpp"
+	"../ext/vector_int1_precision.hpp"
+	"../ext/vector_uint1.hpp"
+	"../ext/vector_uint1_precision.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_bool1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_float1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_double1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_int1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint1.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\vector_uint1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1605510619 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\matrices.cpp
+	"util/matrices.h"
+
+1605510715 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\objeto_teste.cpp
+	"jogo/objeto_teste.h"
+
+1605510747 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\textrendering.cpp
+	<string>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	"util/utils.h"
+	"util/dejavufont.h"
+
+1605510751 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\tiny_obj_loader.cpp
+	"util/tiny_obj_loader.h"
+
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\glm.cpp
+	<glm/gtx/dual_quaternion.hpp>
+	<glm/gtc/vec1.hpp>
+	<glm/gtc/quaternion.hpp>
+	<glm/ext/scalar_int_sized.hpp>
+	<glm/ext/scalar_uint_sized.hpp>
+	<glm/glm.hpp>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtx\dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\type_half.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_packing_simd.inl
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\simd\integer.h
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\gtx\dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\scalar_int_sized.hpp
+	"../detail/setup.hpp"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\glm\ext\scalar_uint_sized.hpp
+	"../detail/setup.hpp"
+
+1605516547 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\gerenciamento_objetos.cpp
+	"engine/gerenciamento_objetos.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\util\tiny_obj_loader.h
+	<map>
+	<string>
+	<vector>
+	<cassert>
+	<cctype>
+	<cmath>
+	<cstddef>
+	<cstdlib>
+	<cstring>
+	<utility>
+	<fstream>
+	<sstream>
+
+1605643037 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\fisica.h
+	<GLFW/glfw3.h>
+	"util/matrices.h"
+	<vector>
+	<algorithm>
+
+1605602824 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\util\matrices.h
+	<cstdio>
+	<cstdlib>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	<glm/gtc/matrix_transform.hpp>
+
+1605631914 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\input.h
+	<GLFW/glfw3.h>
+	"globals.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\util\utils.h
+	<cstdio>
+
+1605517722 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\jogo\objeto_teste.h
+	"engine/input.h"
+	"engine/fisica.h"
+	<glm/mat4x4.hpp>
+	"util/matrices.h"
+
+1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\util\dejavufont.h
+	<stddef.h>
+	<stdint.h>
+
+1605516243 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\objeto_jogo.cpp
+	"engine/objeto_jogo.h"
+	<iostream>
+
+1605517482 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\objeto_jogo.h
+	"engine/input.h"
+	"engine/fisica.h"
+	"util/matrices.h"
+	"engine/gerenciamento_objetos.h"
+	<cstring>
+
+1605531982 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\gerenciamento_objetos.h
+	<GLFW/glfw3.h>
+	<vector>
+	"engine/objetos_base.h"
+
+1605622727 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\objetos_base.h
+	"engine/input.h"
+	"engine/fisica.h"
+	"util/matrices.h"
+	"engine/gerenciamento_objetos.h"
+	<cstring>
+	"engine/comportamentos.h"
+	<string>
+	<util/tiny_obj_loader.h>
+
+1605517972 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\objetos_base.cpp
+	"engine/objetos_base.h"
+
+1605592630 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\comportamentos\velocidade_pela_input.cpp
+	"engine/comportamentos.h"
+
+1605642976 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\engine\comportamentos.h
+	"engine/input.h"
+	"engine/fisica.h"
+	<glm/mat4x4.hpp>
+	"util/matrices.h"
+
+1605642809 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\base_engine\fisica.cpp
+	"engine/fisica.h"
+	"engine/objetos_base.h"
+
+1605630650 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\base_engine\gerenciamento_objetos.cpp
+	"engine/gerenciamento_objetos.h"
+
+1605631908 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\base_engine\input.cpp
+	"engine/input.h"
+	<limits>
+
+1605623417 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\base_engine\objetos_base.cpp
+	"engine/objetos_base.h"
+
+1605510715 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\jogo\objeto_teste.cpp
+	"jogo/objeto_teste.h"
+
+1604104179 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\util\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<dlfcn.h>
+
+1605602810 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\util\matrices.cpp
+	"util/matrices.h"
+
+1605510747 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\util\textrendering.cpp
+	<string>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/mat4x4.hpp>
+	<glm/vec4.hpp>
+	"util/utils.h"
+	"util/dejavufont.h"
+
+1605510751 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\util\tiny_obj_loader.cpp
+	"util/tiny_obj_loader.h"
+
+1605633067 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\comportamentos\explodir.cpp
+	"engine/comportamentos.h"
+
+1605642950 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\comportamentos\estica_com_movimento.cpp
+	"engine/comportamentos.h"
+
+1605633025 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\jogo\objeto_teste2.cpp
+	"jogo/objeto_teste2.h"
+
+1605610065 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\jogo\objeto_teste2.h
+	"engine/objetos_base.h"
+
+1605621872 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\jogo\modelos.h
+
+1605650232 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\jogo\objetos_breakout.cpp
+	"jogo/objetos_breakout.h"
+
+1605650239 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\include\jogo\objetos_breakout.h
+	"engine/objetos_base.h"
+	"engine/comportamentos.h"
+	"jogo/modelos.h"
+	<cstdlib>
+	<time.h>
+

@@ -1,0 +1,43 @@
+ #include "engine/comportamentos.h"
+
+ StrechSquishFromMovementBehaviour
+    (float maximumStretch, kinematicInfo_t* kinematicInfoPointer, glm::mat4* modelPointer)
+
+    //parâmetros para "esticar e espremer" de acordo com o movimento
+    maxStretch = maximumStretch; //pode aumentar em maxStretch*100% na direção do mivimento
+
+    overSquish = 1.5f; //quando objeto muda de direção abruptamente, pode ENCONLHER por um fator overSquish - 1
+
+    movementAngle = 0;
+    angleChangeFactor = 1; //0 -> ângulo não mudou. 1 -> ângulo mudou em 180º
+
+    stretchEaseFactor = 0.75f; //fator de interpolação (não linear) para esticamento
+    angleEaseFactor = cbrt(stretchEaseFactor); //mesmo mas para a mudança de ângulo no esticamento
+
+    stretch = 1.0f; //1 -> normal. > 1 -> esticado; < 1 -> espremido
+
+
+
+    model_p = modelPointer;
+}
+
+void  ExplosionAnimationBehaviour::explode(){
+    //a raiz quadrada faz a explozão começar mais rápido e "desacelerar" conforme cresce
+    scale = minScale + (maxScale-minScale)*sqrt(timeAlreadySpentExploding/timeToExpand);
+    //o fator alfa faz ficar mais transparente conforme cresce, sendo 100% opaco no início da explosão
+    alphaFactor = 1 - (scale-minScale)/(maxScale-minScale);
+    //a transparência deve acelerar com a expansão (na minha cabeça : p)
+    alphaFactor *= alphaFactor;
+
+    timeAlreadySpentExploding += clk.dt;
+
+    //quando terminar de explodir, volta ao normal. Provavelmente não vai ser usado assim na prática : p
+    if (timeAlreadySpentExploding >= timeToExpand){
+        timeAlreadySpentExploding = 0;
+        exploding = false;
+        alphaFactor = 1;
+        scale = 1;
+    }
+
+    *model_p *= Matrix_Scale(scale,scale,scale); //explosão é igual em todas direções
+}

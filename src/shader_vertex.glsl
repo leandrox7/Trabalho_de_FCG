@@ -10,6 +10,7 @@ layout (location = 2) in vec2 texture_coefficients;
 uniform mat4 model;
 uniform mat4 view;
 uniform mat4 projection;
+uniform float alpha_uniform;
 
 // Atributos de vértice que serão gerados como saída ("out") pelo Vertex Shader.
 // ** Estes serão interpolados pelo rasterizador! ** gerando, assim, valores
@@ -17,6 +18,7 @@ uniform mat4 projection;
 // Shader. Veja o arquivo "shader_fragment.glsl".
 out vec4 position_world;
 out vec4 normal;
+out float alpha;
 
 void main()
 {
@@ -55,5 +57,7 @@ void main()
     // Veja slides 123-151 do documento Aula_07_Transformacoes_Geometricas_3D.pdf.
     normal = inverse(transpose(model)) * normal_coefficients;
     normal.w = 0.0;
+
+    alpha = alpha_uniform;
 }
 
