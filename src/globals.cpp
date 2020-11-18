@@ -2,6 +2,12 @@
 
 const float pi_f = 3.141592653589793238463f;
 
+int g_vsync = 0;
+
+int g_timesWon = 0;
+float g_startTime = 0;
+int g_mortes = 0;
+
 // Razão de proporção da janela (largura/altura). Veja função FramebufferSizeCallback().
 float g_ScreenRatio = 1.0f;
 

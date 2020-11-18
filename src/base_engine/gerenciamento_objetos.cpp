@@ -14,7 +14,7 @@ BaseObj* getAddress(int index){
 
 void gameObjectsStep(){
     int listSize = instanceList.size();
-    if (listSize > 0){
+    if ( (listSize > 0) && (clk.dt <= MAX_FRAMETIME) ){
         for(int i = 0; i < listSize; i++) {
             BaseObj* obj = instanceList.at(i);
             obj->instanceID = i;

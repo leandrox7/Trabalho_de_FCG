@@ -53,6 +53,8 @@
 #include "engine/gerenciamento_objetos.h"
 #include "jogo/modelos.h"
 #include "jogo/objetos_breakout.h"
+#include <windows.h>
+#include <mmsystem.h>
 
 // Declaração de funções utilizadas para pilha de matrizes de modelagem.
 void PushMatrix(glm::mat4 M);
@@ -156,6 +158,12 @@ GLint model_uniform;
 GLint view_uniform;
 GLint projection_uniform;
 GLint object_id_uniform;
+GLint lightX_uniform;
+GLint lightY_uniform;
+GLint lightZ_uniform;
+GLint lightR_uniform;
+GLint lightG_uniform;
+GLint lightB_uniform;
 ///////////////////
 //GLfloat alpha_uniform = glGetUniformLocation(program_id,"alpha");
 GLfloat alpha_uniform;
@@ -302,35 +310,48 @@ int main(int argc, char* argv[])
     Bolinha objTstBolinha(glm::vec3(0,1,0),glm::vec3(0,0,0),&spheremodel,5.f);
     Fundo objTstFundo(glm::vec3(0,-30,-1.01),21,9);
 
+    Parede objAuxilio1(glm::vec3(-12,-21.75,0),&modeloCubo,1,5);
+    Parede objAuxilio2(glm::vec3(12,-21.75,0),&modeloCubo,1,5);
+
     Bloco** arrayBloquinhos;
 
     #define COLUNAS_BLOQUINHOS 5
-    #define LINHAS_BLOQUINHOS 3
-//    int colunas = 2;
-//    int linhas = 1;
+    #define LINHAS_BLOQUINHOS 7
 
     arrayBloquinhos = (Bloco**)malloc(sizeof(Bloco*)*COLUNAS_BLOQUINHOS*LINHAS_BLOQUINHOS);
     for (int i = 0; i < COLUNAS_BLOQUINHOS; i++){
         for(int j = 0; j < LINHAS_BLOQUINHOS; j++){
             glm::vec3 position;
-            float passoX = 36.f/(COLUNAS_BLOQUINHOS+1);
-            float passoY = 18.f/(LINHAS_BLOQUINHOS);
-            position.x = -18 + passoX*(i+1);
-            position.y = 23 - passoY*(j);
+            float passoX = 40.f/(COLUNAS_BLOQUINHOS+1);
+            float passoY = 32.f/(LINHAS_BLOQUINHOS);
+            position.x = -20 + passoX*(i+1);
+            position.y = 20 - passoY*(j);
             position.z = 0;
 
             arrayBloquinhos[i*LINHAS_BLOQUINHOS + j] = (new Bloco(position,&modeloCubo2));
+            if( stage[0][j][i] == false){
+                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->active = false;
+                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->chkCollisionsToThis = false;
+                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->alphaFactor = 0;
+            }
         }
     }
-
-    Bloco objBlocoSozinho(glm::vec3(0,-5,0),&modeloCubo2);
 
     //int blocksAlive = COLUNAS_BLOQUINHOS*LINHAS_BLOQUINHOS+1;
     int blocksAlive = 3;
 
-    float startTime = clk.time;
+    g_timesWon = 0;
+    g_mortes = 0;
+    g_startTime = clk.time;
+
+    glfwSwapInterval(g_vsync);
+    PlaySound("../../data/TRAZ_theme.wav", NULL, SND_ASYNC|SND_FILENAME|SND_LOOP);
+    //Composed by Jeroen Kimmel, arranged by Fabian Del Priore
+    initLight();
 
     ///CRIADOS OBJETOS DE JOGO
+
+
 
     while (!glfwWindowShouldClose(window))
     {
@@ -346,7 +367,14 @@ int main(int argc, char* argv[])
         // Conversaremos sobre sistemas de cores nas aulas de Modelos de Iluminação.
         //
         //           R     G     B     A
-        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        float zfac = (light.direction.z+1)/2;
+
+        float ccolorR = 0.4*(1-zfac*zfac) + 0.7*zfac;
+        float ccolorG = 0.4*(1-zfac) + 0.8*zfac;
+        float ccolorB = 0.2*(1-zfac) + zfac;
+
+        glClearColor(ccolorR, ccolorG, ccolorB, 1.0f);
+        //glClearColor((light.direction.z+1)/2, (light.direction.z+1)/2, (light.direction.z+1)/2, 1.0f);
 
         // "Pintamos" todos os pixels do framebuffer com a cor definida acima,
         // e também resetamos todos os pixels do Z-buffer (depth buffer).
@@ -410,12 +438,20 @@ int main(int argc, char* argv[])
         // efetivamente aplicadas em todos os pontos.
         glUniformMatrix4fv(view_uniform       , 1 , GL_FALSE , glm::value_ptr(view));
         glUniformMatrix4fv(projection_uniform , 1 , GL_FALSE , glm::value_ptr(projection));
+        glUniform1f(lightX_uniform,light.direction.x);
+        glUniform1f(lightY_uniform,light.direction.y);
+        glUniform1f(lightZ_uniform,light.direction.z);
+        glUniform1f(lightR_uniform,light.RGB.r);
+        glUniform1f(lightG_uniform,light.RGB.g);
+        glUniform1f(lightB_uniform,light.RGB.b);
+
 
         #define SPHERE 0
         #define CUBE  1
         #define PLANE 2
         #define PAREDE  3
         #define PALETA  4
+        #define AUXILIAR 5
 
         ///OBJETOS DE TESTE DESENHADOS AQUI
 
@@ -428,6 +464,7 @@ int main(int argc, char* argv[])
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstFundo.model));
         glUniform1i(object_id_uniform, PLANE);
         glUniform1f(alpha_uniform, 1.0f);
+
         DrawVirtualObject(objTstFundo.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstPaleta.model));
@@ -439,6 +476,16 @@ int main(int argc, char* argv[])
 //        glUniform1i(object_id_uniform, CUBO);
 //        glUniform1f(alpha_uniform, 1.0f);
 //        if(objTstBase.active)  DrawVirtualObject(objTstBase.shapeName);
+
+        glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objAuxilio1.model));
+        glUniform1i(object_id_uniform, AUXILIAR);
+        glUniform1f(alpha_uniform, 1.0f);
+        if(objAuxilio1.active)  DrawVirtualObject(objAuxilio1.shapeName);
+
+        glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objAuxilio2.model));
+        glUniform1i(object_id_uniform, AUXILIAR);
+        glUniform1f(alpha_uniform, 1.0f);
+        if(objAuxilio2.active)  DrawVirtualObject(objAuxilio2.shapeName);
 
         glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objTstParede.model));
         glUniform1i(object_id_uniform, PAREDE);
@@ -479,35 +526,44 @@ int main(int argc, char* argv[])
             }
         }
 
-        glUniformMatrix4fv(model_uniform, 1 , GL_FALSE , glm::value_ptr(objBlocoSozinho.model));
-        glUniform1i(object_id_uniform, CUBE);
-        glUniform1f(alpha_uniform, objBlocoSozinho.alphaFactor);
-        if(objBlocoSozinho.active){
-            blocksAlive += 1;
-            DrawVirtualObject(objBlocoSozinho.shapeName);
-        }
-
         if ( blocksAlive == 0){
-            printf("acabou blocos! Tempo: %f, mortes = %i\n",clk.time - startTime,objTstBolinha.mortes);
+            g_timesWon++;
+            printf("\nacabou os blocos! Mas eles voltam...\nLimpou %i vez(es). Tempo total: %f segundos. Bolas perdidas: %i\n",g_timesWon,clk.time - g_startTime,g_mortes);
+            if(g_timesWon >= 10){
+                objAuxilio1.active = false; objAuxilio2.active = false;
+                objAuxilio1.chkCollisionsToThis = false; objAuxilio2.chkCollisionsToThis = false;
+            }
+            else if (g_timesWon%2 == 0){
+                float scaling = (5-(g_timesWon/2))/(float)(5-(g_timesWon/2)+1);
+                objAuxilio1.model *= Matrix_Scale(scaling,1,1);
+                objAuxilio2.model *= Matrix_Scale(scaling,1,1);
+
+                objAuxilio1.boundingBox.maximum.x *= scaling;
+                objAuxilio1.boundingBox.maximum.y *= scaling;
+                objAuxilio1.boundingBox.minimum.x *= scaling;
+                objAuxilio1.boundingBox.minimum.y *= scaling;
+
+                objAuxilio2.boundingBox.maximum.x *= scaling;
+                objAuxilio2.boundingBox.maximum.y *= scaling;
+                objAuxilio2.boundingBox.minimum.x *= scaling;
+                objAuxilio2.boundingBox.minimum.y *= scaling;
+            }
+            int stg = (g_timesWon+1)/2;
+            if (stg > 12) stg = 12;
             for (int i = 0; i < COLUNAS_BLOQUINHOS; i++){
-            for(int j = 0; j < LINHAS_BLOQUINHOS; j++){
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->chkCollisionsToThis = true;
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->active = true;
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->meshInfo_p = &modeloCubo2;
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->damage = 0;
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->shapeName =
-                                  arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->meshInfo_p->shapes[0].name.c_str();
-                arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->alphaFactor = 1;
-                blocksAlive += 1;
+                for(int j = 0; j < LINHAS_BLOQUINHOS; j++){
+                    if( stage[stg][j][i] == true){
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->chkCollisionsToThis = true;
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->active = true;
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->meshInfo_p = &modeloCubo2;
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->damage = 0;
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->shapeName =
+                                          arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->meshInfo_p->shapes[0].name.c_str();
+                        arrayBloquinhos[i*LINHAS_BLOQUINHOS + j]->alphaFactor = 1;
+                        blocksAlive += 1;
+                    }
                 }
             }
-            objBlocoSozinho.active = true;
-            objBlocoSozinho.chkCollisionsToThis = true;
-            objBlocoSozinho.meshInfo_p = &modeloCubo2;
-            objBlocoSozinho.damage = 0;
-            objBlocoSozinho.shapeName = objBlocoSozinho.meshInfo_p->shapes[0].name.c_str();
-            objBlocoSozinho.alphaFactor = 1;
-            blocksAlive += 1;
         }
 //
 
@@ -571,6 +627,10 @@ int main(int argc, char* argv[])
         }
         if (g_actionKB[SHOW_HELP][STATE]  == JUST_PRESSED)
             g_ShowInfoText = !g_ShowInfoText;
+        if (g_actionKB[TOGGLE_VSYNC][STATE]  == JUST_PRESSED){
+            g_vsync = !g_vsync;
+            glfwSwapInterval(g_vsync);
+        }
         if (g_actionKB[RELOAD_SHADERS][STATE] == JUST_PRESSED) {
             LoadShadersFromFiles();
             fprintf(stdout,"Shaders recarregados!\n");
@@ -652,6 +712,13 @@ void LoadShadersFromFiles()
     view_uniform            = glGetUniformLocation(program_id, "view"); // Variável da matriz "view" em shader_vertex.glsl
     projection_uniform      = glGetUniformLocation(program_id, "projection"); // Variável da matriz "projection" em shader_vertex.glsl
     object_id_uniform       = glGetUniformLocation(program_id, "object_id"); // Variável "object_id" em shader_fragment.glsl
+    lightX_uniform          = glGetUniformLocation(program_id, "lightX");
+    lightY_uniform          = glGetUniformLocation(program_id, "lightY");
+    lightZ_uniform          = glGetUniformLocation(program_id, "lightZ");
+    lightR_uniform          = glGetUniformLocation(program_id, "lightR");
+    lightG_uniform          = glGetUniformLocation(program_id, "lightG");
+    lightB_uniform          = glGetUniformLocation(program_id, "lightB");
+
 }
 
 // Função que pega a matriz M e guarda a mesma no topo da pilha
@@ -1360,8 +1427,8 @@ void TextRendering_ShowEulerAngles(GLFWwindow* window)
 
     float pad = TextRendering_LineHeight(window);
 
-    char buffer[80];
-    snprintf(buffer, 80, "Euler Angles rotation matrix = Z(%.2f)*Y(%.2f)*X(%.2f)\n", g_AngleZ, g_AngleY, g_AngleX);
+    char buffer[100];
+    snprintf(buffer, 100, "Nivel %i | Bolas perdidas: %i | Tempo de jogo: %.2f s | Quebre tudo! | Use W,S,A,D |", g_timesWon+1, g_mortes, clk.time - g_startTime);
 
     TextRendering_PrintString(window, buffer, -1.0f+pad/10, -1.0f+2*pad/10, 1.0f);
 }

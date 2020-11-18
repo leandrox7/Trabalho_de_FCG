@@ -4,8 +4,18 @@
 #define CAMERA_THETA_ZERO (0.f)
 #define CAMERA_PHI_ZERO (0.f)
 #define CAMERA_DIST_ZERO (48.f)
+#define MAX_FRAMETIME (0.1f)
+#define GAME_AREA_DIST_FROM_CENTER 35
 
 extern const float pi_f;
+
+extern int g_timesWon;
+
+extern float g_startTime;
+
+extern int g_mortes;
+
+extern int g_vsync;
 
 // Razão de proporção da janela (largura/altura). Veja função FramebufferSizeCallback().
 extern float g_ScreenRatio;

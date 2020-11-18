@@ -946,7 +946,7 @@
 	<inttypes.h>
 	<stdint.h>
 
-1605653199 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\main.cpp
+1605683404 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\main.cpp
 	<cmath>
 	<cstdio>
 	<cstdlib>
@@ -975,6 +975,8 @@
 	"engine/gerenciamento_objetos.h"
 	"jogo/modelos.h"
 	"jogo/objetos_breakout.h"
+	<windows.h>
+	<mmsystem.h>
 
 1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glfw\glfw3.h
 	<stddef.h>
@@ -1874,7 +1876,7 @@
 	<GLFW/glfw3.h>
 	"globals.h"
 
-1605640241 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\globals.h
+1605666694 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\globals.h
 
 1605502223 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\input.cpp
 	"input.h"
@@ -1895,7 +1897,7 @@
 1605346619 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\matrices.cpp
 	"matrices.h"
 
-1605640191 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\globals.cpp
+1605666853 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\globals.cpp
 	"globals.h"
 
 1605517076 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg_cold\src\fisica.cpp
@@ -3153,11 +3155,11 @@
 1604104179 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\glm\ext\scalar_uint_sized.hpp
 	"../detail/setup.hpp"
 
-1605642809 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\fisica.cpp
+1605681281 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\fisica.cpp
 	"engine/fisica.h"
 	"engine/objetos_base.h"
 
-1605643037 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\fisica.h
+1605676347 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\fisica.h
 	<GLFW/glfw3.h>
 	"util/matrices.h"
 	<vector>
@@ -3170,7 +3172,7 @@
 	<glm/vec4.hpp>
 	<glm/gtc/matrix_transform.hpp>
 
-1605622727 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\objetos_base.h
+1605660585 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\objetos_base.h
 	"engine/input.h"
 	"engine/fisica.h"
 	"util/matrices.h"
@@ -3180,7 +3182,7 @@
 	<string>
 	<util/tiny_obj_loader.h>
 
-1605631914 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\input.h
+1605663487 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\engine\input.h
 	<GLFW/glfw3.h>
 	"globals.h"
 
@@ -3209,14 +3211,14 @@
 	<fstream>
 	<sstream>
 
-1605630650 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\gerenciamento_objetos.cpp
+1605659085 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\gerenciamento_objetos.cpp
 	"engine/gerenciamento_objetos.h"
 
-1605631908 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\input.cpp
+1605663341 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\input.cpp
 	"engine/input.h"
 	<limits>
 
-1605623417 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\objetos_base.cpp
+1605660730 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\base_engine\objetos_base.cpp
 	"engine/objetos_base.h"
 
 1605642950 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\comportamentos\estica_com_movimento.cpp
@@ -3243,10 +3245,10 @@
 1605610065 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\jogo\objeto_teste2.h
 	"engine/objetos_base.h"
 
-1605650232 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\jogo\objetos_breakout.cpp
+1605666619 source:d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\src\jogo\objetos_breakout.cpp
 	"jogo/objetos_breakout.h"
 
-1605650239 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\jogo\objetos_breakout.h
+1605685803 d:\prog\fund_comp_graf\projeto\trabalho_de_fcg\include\jogo\objetos_breakout.h
 	"engine/objetos_base.h"
 	"engine/comportamentos.h"
 	"jogo/modelos.h"

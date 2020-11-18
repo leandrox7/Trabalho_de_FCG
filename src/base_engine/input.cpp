@@ -25,6 +25,7 @@ void initInputMap(){
     g_actionKB[UP][GLFW_CODE] = GLFW_KEY_W;
     g_actionKB[DOWN][GLFW_CODE] = GLFW_KEY_S;
     g_actionKB[RESET_CAMERA][GLFW_CODE] = GLFW_KEY_C;
+    g_actionKB[TOGGLE_VSYNC][GLFW_CODE] = GLFW_KEY_V;
 
 
     ///FIM DAS DEFINIÇÕES DE CONTROLE

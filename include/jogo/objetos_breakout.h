@@ -15,6 +15,127 @@
 #define EXPLOSION_INIT_SCALE (0.8f)
 #define EXPLOSION_MAX_SCALE (2.f)
 #define DEATH_ZONE_Y (-22.5f)
+#define GRIP_DEFAULT 5
+
+static bool stage[13][7][5]{//marca que blocos aparecem para cada dois níveis (primeiro índice)
+    {
+        {true, false, true, false, true},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {false, true, false, true, false},
+        {false, false, true, false, false},
+        {true, false, true, false, true},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, false, true, false, true},
+        {false, true, false, true, false},
+        {true, false, true, false, true},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {false, true, true, true, false},
+        {true, false, false, false, true},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {false, true, false, true, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {false, true, false, true, false},
+        {true, false, false, false, true},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, false, true, false, true},
+        {false, true, false, true, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {false, true, true, true, false},
+        {true, false, false, false, true},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, false, true, true},
+        {true, true, true, true, true},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+    },
+    {
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, false, false, false},
+        {false, false, true, false, false},
+        {false, false, false, false, false},
+    },
+    {
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+        {true, true, true, true, true},
+    },
+};
 
 class Parede: public BaseCollidingObj{
 
@@ -64,6 +185,7 @@ class Bolinha: public BaseCollidingObj, public ExplosionAnimationBehaviour, publ
 
     private:
         void endOfExplosion();
+        float grip;
 };
 
 class Fundo: public BaseGameObj{

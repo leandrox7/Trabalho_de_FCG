@@ -22,7 +22,7 @@ BaseGameObj::BaseGameObj(glm::vec3 pos, ObjModel* meshInformation):BaseObj(){
     maxSpeed = 75.f;
 
     rotationAroundEachAxis = glm::vec3(0,0,0);
-    scalingAlongEachAxis = glm::vec3(0,0,0);
+    scalingAlongEachAxis = glm::vec3(1,1,1);
 
     model = Matrix_Identity();
     meshInfo_p = meshInformation;
@@ -33,7 +33,14 @@ BaseGameObj::BaseGameObj(glm::vec3 pos, ObjModel* meshInformation):BaseObj(){
 void BaseGameObj::step() {}
 
 void BaseGameObj::updateTranslationMatrix(){ //colocar a física para chamar isso?
-    model = Matrix_Identity()*Matrix_Translate(kinematicInfo.pos.x,kinematicInfo.pos.y,kinematicInfo.pos.z);
+    model = Matrix_Identity()*Matrix_Translate(kinematicInfo.pos.x,kinematicInfo.pos.y,kinematicInfo.pos.z)
+    *Matrix_Scale(scalingAlongEachAxis.x,scalingAlongEachAxis.y,scalingAlongEachAxis.z)
+    *Matrix_Translate(-kinematicInfo.pos.x,-kinematicInfo.pos.y,-kinematicInfo.pos.z);
+
+//    model = Matrix_Identity()*Matrix_Translate(kinematicInfo.pos.x,kinematicInfo.pos.y,kinematicInfo.pos.z)
+//    *Matrix_Scale(scalingAlongEachAxis.x,scalingAlongEachAxis.y,scalingAlongEachAxis.z)
+//    *Matrix_Rotate_Z(rotationAroundEachAxis.x)*Matrix_Rotate_Y(rotationAroundEachAxis.x)*Matrix_Rotate_X(rotationAroundEachAxis.x)
+//    *Matrix_Translate(-kinematicInfo.pos.x,-kinematicInfo.pos.y,-kinematicInfo.pos.z);
 }
 
 void BaseGameObj::changeMesh(ObjModel* newMeshsInfo){

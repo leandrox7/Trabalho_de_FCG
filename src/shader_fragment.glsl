@@ -19,8 +19,15 @@ uniform mat4 projection;
 #define PLANE  2 //parte vermelha do fundo
 #define PAREDE  3
 #define PALETA  4
+#define AUXILIAR  5
 
 uniform int object_id;
+uniform float lightX;
+uniform float lightY;
+uniform float lightZ;
+uniform float lightR;
+uniform float lightG;
+uniform float lightB;
 
 // O valor de saída ("out") de um Fragment Shader é a cor final do fragmento.
 out vec4 color;
@@ -47,7 +54,9 @@ void main()
     vec4 v = normalize(camera_position - p);
 
     // Vetor que define o sentido da fonte de luz em relação ao ponto atual.
-    vec4 l = normalize(v); //luz direcional
+    //vec4 l = normalize(v); //luz direcional
+    vec4 l = vec4(lightX,lightY,lightZ,0);
+    l = normalize(l);
 
     // Vetor que define o sentido da reflexão especular ideal.
     vec4 r = -l + 2*n*dot(l,n); // PREENCHA AQUI o vetor de reflexão especular ideal
@@ -106,6 +115,15 @@ void main()
         Ka = vec3(0.3, 0.1, 0.05);
         q = 32.0;
     }
+    else if ( object_id == AUXILIAR )
+    {
+        // PREENCHA AQUI
+        // Propriedades espectrais do plano
+        Kd = vec3(0.25, 0.25, 0.3);
+        Ks = vec3(0.4, 0.4, 0.8);
+        Ka = vec3(0.2, 0.15, 0.15);
+        q = 32.0;
+    }
     else // Objeto desconhecido = preto
     {
         Kd = vec3(0.0,0.0,0.0);
@@ -115,7 +133,9 @@ void main()
     }
 
     // Espectro da fonte de iluminação
-    vec3 I = vec3(1.0, 1.0, 1.0); // PREENCH AQUI o espectro da fonte de luz
+    //vec3 I = vec3(1.0, 1.0, 1.0); // PREENCH AQUI o espectro da fonte de luz
+    vec3 I = vec3(lightR,lightG,lightB);
+    I = normalize(I);
 
     // Espectro da luz ambiente
     vec3 Ia = vec3(0.2, 0.2, 0.2); // PREENCHA AQUI o espectro da luz ambiente

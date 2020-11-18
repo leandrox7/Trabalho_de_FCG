@@ -9,7 +9,7 @@
 //existe um array g_actionKB[NUMBER_KB_ACTIONS][INFO_PER_ACTION]
 //o primeiro índice determina qual a ação e o segundo qual a informação sobre ela.
 //as ações são:
-#define NUMBER_KB_ACTIONS 11
+#define NUMBER_KB_ACTIONS 12
 
 #define EXIT 0
 #define PERSPECTIVE_PROJ 1
@@ -22,6 +22,7 @@
 #define UP 8
 #define DOWN 9
 #define RESET_CAMERA 10
+#define TOGGLE_VSYNC 11
 
 //para cada ação tem-se informação sobre o código glfw associado (tecla), estado atual e estado anterior
 #define INFO_PER_ACTION 3
